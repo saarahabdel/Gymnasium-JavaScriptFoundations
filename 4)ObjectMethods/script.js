@@ -10,7 +10,7 @@
 
 
 
-// var messenger = {};
+// var messenger = {};                                 
 // messenger.sayHello = function() {
 //     console.log("Hello.");
 // };
@@ -20,7 +20,9 @@
 
 /** Object Methods that we use all the time:
  * 
- * same as: console.log(message);
+ * same as:
+ * 
+ * console.log(message);
  * Math.random();
  * message.substring(0,4);
  * 

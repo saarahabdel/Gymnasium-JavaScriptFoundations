@@ -43,8 +43,8 @@ var items = ["hammer", "screwdriver", "saw", "chisel", "vise", "wrench", "pliers
 */
 
 // Simple for loop
-// for(var i=0; i < 10; i++) {
-//     console.log(i);
+// for(var i = 0; i < 10; i++) {
+//     console.log(i);               // returns all items in the array
 // }
 
 /** Example 4 */
