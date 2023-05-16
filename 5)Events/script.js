@@ -8,11 +8,11 @@
 
 // Example:
 
-document.addEventListener("click", onClick);
+// document.addEventListener("click", onClick);
 
-function onClick(event) {
-    doSomething();
-};
+// function onClick(event) {
+//     doSomething();
+// };
 
 
 /**
@@ -28,9 +28,9 @@ function onClick(event) {
  */
 
 // Event listeners are often written like this:  (with an anonymous function)
-document.addEventListener("click",function(event)) {
-    doSomething();
-};
+// document.addEventListener("click",function(event) {
+//     doSomething();
+// });
 
 /** COMMON EVENTS
  * 
@@ -42,3 +42,23 @@ document.addEventListener("click",function(event)) {
  * keyup
  * 
  */ 
+
+// document.addEventListener("mousedown", function(event) {
+//     console.log("mouse down. x: " + event.clientX + ", y: " + event.clientY);   // use event parameter to get current x and y position of mouse
+// });
+
+// document.addEventListener("mousemove", function(event) {
+//     console.log("mouse move. x: " + event.clientX + ", y: " + event.clientY);   // use event parameter to get current x and y position of mouse
+// });
+
+// document.addEventListener("keydown", function(event) {
+//     console.log("key down: " + event.keyCode);   // appending keyCode property of the event object
+// });
+// logs a number for each key that is pressed. Its an integer that represents which key was pressed(number is generally the same as the ascii code of that key)
+// String.fromCharCode(event.keyCode) --> converts the keycode to the actual key getting pressed
+
+document.addEventListener("keydown", function(event) {
+    console.log("key down: " + String.fromCharCode(event.keyCode));   // appending keyCode property of the event object
+});
+
+
